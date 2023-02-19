@@ -3,12 +3,13 @@
 
 
 
-var slider = document.getElementById("rango1");
-var output = document.getElementById("valor1");
+var slider1 = document.getElementById("rango1");
+var output1 = document.getElementById("valor1");
+sliderMove(slider1, output1);
 
-sliderMove(slider, output);
-
-
+var slider2 = document.getElementById("rango2");
+var output2 = document.getElementById("valor2");
+sliderMove(slider2, output2);
 
 function sliderMove(slider, output) {
     output.innerHTML = slider.value;

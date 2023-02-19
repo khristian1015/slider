@@ -2,9 +2,13 @@
 
 
 .slidecontainer {
-  width: 90%;
   position: relative;
-  left: 30px;
+  width: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.slidecontainer {
+  margin: auto;
 }
 
 .slidecontainer output {
