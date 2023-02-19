@@ -60,57 +60,29 @@
 </head>
 
 <body>
-    <input placeholder="Escribe algo en este lugar" >
-
-    <script src="./script.js"></script>
-    
-    <div>
-        <input type="range" id="volume" name="volume"
-               min="0" max="11">
-        <label for="volume">Volume</label>
-    </div>
-    
-
-
     
     <h1>Round Range Slider</h1>
     
-    <div class="slidecontainer">
-      <input type="range" min="1" max="100" value="50" class="slider" 
-      id="myRange">
-      <p>Value: <span id="demo"></span></p>
-    </div>
-   
-    <script>
-        var slider = document.getElementById("myRange");
-        var output = document.getElementById("demo");
-        output.innerHTML = slider.value;
-        
-        slider.oninput = function() {
-          output.innerHTML = this.value;
-        }
-    </script>
-
-
-
-
-
 
     <div class="slidecontainer">
-        <input type="range" min="0" max="100" value="50" class="slider" 
+        <input type="range" min="0" max="100" value="60" class="slider" 
         id="myRange2">
         <output for="myRange2" id="valor"></output>
     </div>
 
     <script>
     var slider2 = document.getElementById("myRange2");
+    var output2 = document.getElementById("valor");
+    output2.innerHTML = slider2.value;
 
     slider2.oninput = function() {
-      var output2 = document.getElementById("valor");
       output2.innerHTML = this.value;
       var sliderWidth = this.getBoundingClientRect().width;
-      var outputWidth = output.getBoundingClientRect().width;
-      var offset = this.value / (this.max - this.min) * sliderWidth - outputWidth;
+      console.log("sliderwidth", sliderWidth)
+      var outputWidth = output2.getBoundingClientRect().width;
+      console.log("outputWidth", outputWidth)
+      var offset = this.value / (this.max - this.min) * sliderWidth - outputWidth / 2;
+      console.log("off", offset)
       output2.setAttribute('style', 'left: ' + offset + 'px');
     }
 

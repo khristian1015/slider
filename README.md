@@ -15,3 +15,5 @@ index-gpt.html
 codigo que me dio chatgpt donde me da el machote para varias preguntas pero con sliders básicos
 
 
+https://codepen.io/intertidalist/pen/VojWaR
+-- un slider cuya etiqueta se mueve exactamente como la bolita (no se desplaza izq ni derecha)
