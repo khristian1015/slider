@@ -24,12 +24,14 @@ body{
   color:rgba(255, 255, 255);
 }
 
+/* -------- Question format -------- */
 .questioncontainer {
   position: relative;
   width: 90%;
   left: 30px;
 }
 
+/* -------- Slider format -------- */
 .slidecontainer {
   position: relative;
   width: 60%;
@@ -40,14 +42,40 @@ body{
   margin: auto;
 }
 
+/* -------- Slider value format (dentro de caja) -------- */
 .slidecontainer output {
     margin-top: 0px;
     position: absolute;
-    padding: .5em;
-    background: transparent;
-    color: black;
+    top: -15px;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    background: #1c2126;
+    color: white;
+    font-size: 0.8em;
 }
 
+.slidecontainer output:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #1c2126;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+/* -------- Slider min-max (debajo de barrita) -------- */
+.slidecontainer .min-max {
+	display: flex;
+	justify-content: space-between;
+	color: black;
+}
+
+/* -------- Slider barrita gris -------- */
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -64,6 +92,7 @@ body{
   opacity: 1;
 }
 
+/* -------- Slider bolita morada -------- */
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -74,6 +103,7 @@ body{
   cursor: pointer;
 }
 
+/* -------- ?? -------- */
 .slider::-moz-range-thumb {
   width: 35px;
   height: 35px;
