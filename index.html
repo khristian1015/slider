@@ -12,15 +12,33 @@
 </head>
 
 <body>
-    
-    <h1>Round Range Slider</h1>
-    
+    <!--Header: Nombre del proyecto-->
+    <header class = "header">
+        <h1>Proyecto: Comunicación Profesor- estudiante vía WhatsApp</h1>
+    </header>
 
+    <!--Descripción de encuesta-->
+
+    <!--Instrucciones de encuesta-->
+    <div class="questioncontainer">
+        <h2>Encuesta de cumplimiento de criterios del proyecto</h2>
+        <p>Por favor desliza la barra para calificar el nivel de cumplimiento de cada criterio del proyecto, donde 0 es la calificación más baja y 100 es la más alta.</p><br>
+    </div>
+
+    <!--Questions-->
+    <div class="questioncontainer">
+        <h3>Criterio 1</h3>
+        <p>Comunicación 1 - 1 entre estudiante-profesor / profesor-estudiante</p>
+    </div>    
     <div class="slidecontainer">
         <input type="range" min="0" max="100" value="100" class="slider" id="rango1">
         <output for="rango1" id="valor1"></output>
     </div>
 
+    <div class="questioncontainer">
+        <h3>Criterio 2</h3>
+        <p>Múltiples conversaciones simultáneas</p>
+    </div>
     <div class="slidecontainer">
         <input type="range" min="0" max="100" value="100" class="slider" id="rango2">
         <output for="rango2" id="valor2"></output>
