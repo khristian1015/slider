@@ -17,16 +17,26 @@ function sliderMove(slider, output) {
     slider.oninput = function() {
       output.innerHTML = this.value;
       var sliderWidth = this.getBoundingClientRect().width;
-      console.log("sliderwidth", sliderWidth)
+      // console.log("sliderwidth", sliderWidth)
       var outputWidth = output.getBoundingClientRect().width;
-      console.log("outputWidth", outputWidth)
+      // console.log("outputWidth", outputWidth)
       var offset = this.value / (this.max - this.min) * sliderWidth - outputWidth / 2;
-      console.log("off", offset)
+      // console.log("off", offset)
       output.setAttribute('style', 'left: ' + offset + 'px');
     }
     
     slider.oninput();
 }
+
+
+const btn = document.getElementById('btnGuardar');
+btn.addEventListener('click', btnOnClick);
+
+function btnOnClick() {
+    const arrayCalifs = [slider1.value, slider2.value];
+    console.log("califs", arrayCalifs)
+}
+
 
 /* WORKS OK but chabged into function
 var slider1 = document.getElementById("myRange");
