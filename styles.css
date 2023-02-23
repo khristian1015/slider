@@ -153,16 +153,16 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 20px 0 20px;
+        padding: 0 15px 0 15px;
         box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
         background-color: #545b8d;
         color:rgba(255, 255, 255);
-        font-size: 0.9em;
+        font-size: 0.8em;
       }
       .questioncontainer {
         position: relative;
         width: 90%;
-        left: 20px;
+        left: 15px;
       }
       .slidecontainer {
         margin: auto;
