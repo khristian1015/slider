@@ -43,10 +43,10 @@ function btnOnClick() {
   const calif = arrayCalifs
 
   const URL = "http://localhost:5000/"
-  const texto1 = "correo=" + correo
+  const texto1 = "mail=" + correo
   const texto2 = "trim=" + trim
   const texto3 = "proy=" + proy
-  const texto4 = "calif=" + calif
+  const texto4 = "cali=" + calif
   textolargo = URL + "?" + texto1 + "&" + texto2 + "&" + texto3 + "&"
     + texto4
   console.log(textolargo)
