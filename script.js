@@ -40,11 +40,12 @@ function sliderMove(slider, output) {
   slider.oninput();
 }
 
-/* Crear funcionalidad del botón: onClick  */
+/* Crear funcionalidad del botón de encuesta: onClick  */
 const btn = document.getElementById('btnGuardar');
 btn.addEventListener('click', btnOnClick);
 
-/* Función para que el botón construya y mande info al backend */
+/* Función para que el botón de encuesta construya y 
+mande info al backend */
 function btnOnClick() {
   const arrayCalifs = [slider1.value, slider2.value];
   console.log("califs", arrayCalifs)
@@ -71,8 +72,8 @@ function btnOnClick() {
       // do something with the response
     });
   
-  /* -Función para que el botón mande llamar página de GRAX */
-  
+  /* -Funciónalidad para que el botón mande llamar página de GRAX */
+  window.open('./thankyou.html','_self');
 
 } // fin de la funcionalidad del botón
 
